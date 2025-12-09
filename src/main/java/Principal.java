@@ -19,13 +19,13 @@ import java.util.Scanner;
             boolean err = false;
 
 //multiplicación y división
-            if (ope == '+' ) {
+            if (ope == '+' )/*suma*/ {
                 result = num1 + num2;
-            } else if (ope == '-') {
+            } else if (ope == '-')/*resta*/ {
                 result = num1 - num2;
-            } else if (ope == '*') {
+            } else if (ope == '*')/*multiplicacion*/ {
                 result = num1 * num2;
-            } else if (ope == '/') {
+            } else if (ope == '/')/*division*/ {
                 result = num1 / num2;
             }else {
                 System.out.println("Error! Operación no reconocida");
