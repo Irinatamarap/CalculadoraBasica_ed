@@ -18,23 +18,30 @@ import java.util.Scanner;
             float result = 0;
             boolean err = false;
 
+
             //multiplicación y división
             if (ope == '+' ) {
+
+//multiplicación y división
+            if (ope == '+' )/*suma*/ {
                 result = num1 + num2;
-            } else if (ope == '-') {
+            } else if (ope == '-')/*resta*/ {
                 result = num1 - num2;
-            } else if (ope == '*') {
+            } else if (ope == '*')/*multiplicacion*/ {
                 result = num1 * num2;
+
             } else if (ope == '/') {
-                // Mejora añadida:
+                // Mejora añadida por Irina:
                 // Se valida la división entre cero para evitar errores
-                // Validación de división entre cero
                 if (num2 == 0) {
                     System.out.println("❌ Error: no se puede dividir entre cero.");
                     err = true;
                 } else {
                     result = num1 / num2;
                 }
+
+            } else if (ope == '/')/*division*/ {
+
                 result = num1 / num2;
             }else {
                 System.out.println("Error! Operación no reconocida");
