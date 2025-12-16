@@ -18,7 +18,7 @@ import java.util.Scanner;
             float result = 0;
             boolean err = false;
 
-//multiplicación y división
+            //multiplicación y división
             if (ope == '+' ) {
                 result = num1 + num2;
             } else if (ope == '-') {
@@ -26,6 +26,15 @@ import java.util.Scanner;
             } else if (ope == '*') {
                 result = num1 * num2;
             } else if (ope == '/') {
+                // Mejora añadida:
+                // Se valida la división entre cero para evitar errores
+                // Validación de división entre cero
+                if (num2 == 0) {
+                    System.out.println("❌ Error: no se puede dividir entre cero.");
+                    err = true;
+                } else {
+                    result = num1 / num2;
+                }
                 result = num1 / num2;
             }else {
                 System.out.println("Error! Operación no reconocida");
